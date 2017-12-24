@@ -5,27 +5,65 @@
     <title>Регистрация</title>
 </head>
 <body>
-    <h1>Контакты</h1>
+    
     <ul class="menu">
         <li><a href="index.html">Главная</a><br></li>
-        <li><a href="#">Контакты</a><br></li>
         <li><a href="catalog/catalog.html">Каталог</a><br></li>
+        <li><a href="#">Контакты</a><br></li>   
     </ul> 
     <hr>
+    <h1>Контактная информация</h1>
+    
+    <h3>Адрес</h3>
+    <p>
+        Екатеринбург, Вильгельма де Геннина, 42<br>
+        Бесплатный телефон. Звоните с 9:00 до 23:00<br>
+        <b><big>8 (343) 215-54-85, +7 922-451-54-54</big></b><br>
+        электронная почта<br>
+        <a href="#">info@profoto.ru</a>
+    </p>
+    
+    <h3>Доставка</h3>
+    <p>
+        Доставка осуществляется ежедневно, с 10:00 до 23:00.<br>  
+        Также вы можете забрать свой заказ на пунктах выдачи.
+    </p>
+    
+    <h4>Пункт выдачи заказов</h4>
+    <p>Екатеринбург, Вильгельма де Геннина, 42
+    ежедневно c 10:00 до 21:00
+    </p>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1sexvqIFxCXLPKxJ3PU1TAjm9azLIjYMg&hl=ru" width="640" height="480"></iframe>
      
+    <h3>Напишите нам</h3>
     <form action="#">
-    Ваше имя <input type="text" placeholder="Ваше имя"><br>
-    Пароль <input type="password" placeholder="Пароль"><br>
-    Ваш пол<br>
-    М <input type="radio" name="pol" checked> <br>
-    Ж <input type="radio" name="pol"><br>
-    Ваши увлечения<br>
-    Спорт <input type="checkbox"><br>
-    IT <input type="checkbox"><br>
-    Музыка <input type="checkbox"><br>
-    Фото <input type="checkbox"><br>
-    <input type="submit" value="Отправить данные"> 
-    <input type="reset" value="Отмена">    
+       <table>
+           <tr>
+               <td>Ваше имя:</td>
+               <td><input type="text" placeholder="Ваше имя"></td>
+               
+           </tr>
+           <tr>
+               <td>E-mail:</td>
+               <td><input type="email" placeholder="ivaniv@gmail.com"></td>    
+           <tr>
+               <td>Тема:</td>
+               <td>
+                  <select>
+                      <option></option>
+                      <option>Консультация по выбору товара</option>
+                      <option>Гарантийное обслуживание</option>
+                      <option>Предложения по улучшению сервиса</option>
+                  </select>
+               </td>
+           </tr>
+           <tr>
+               <td>Текст сообщения:</td>
+               <td><textarea cols="50" rows="1"></textarea></td>
+           </tr>
+        </table>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Начать заново">
     </form>
     <hr>
     <p>
