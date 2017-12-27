@@ -1,0 +1,73 @@
+/* фон + выравнивание контента по центру страницы */
+body{
+    background-color: #f8f8f8;
+    width: 1200px;
+    height: 100%;
+    padding: 10px;
+    margin: auto;
+}
+/* стили меню */
+.menu li{
+    list-style-type: none;
+    font-size: 20px;
+    border: 1px  solid grey;
+    width: 100px;
+    text-align: center
+}
+.menu li a{
+    color: #666;
+}
+.menu{
+    padding: 0;
+    margin-left: 10px;
+}
+
+/* выравнивание таблицы на главной по верхнему краю */
+.Header td{
+    vertical-align: top;
+}
+
+/* убрирает подчеркивание ссылок*/
+a{
+    text-decoration: none;
+}
+/* стили фотографий продукции */
+.product{
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #999
+}
+h2{
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+}
+.short_description{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    list-style-type: square;
+}
+.detailed_description{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.characteristics{
+    list-style-type: none;
+    padding: 10px;
+    color: #333;
+    
+}
+.characteristics ul{
+    list-style-image: url(img/marks.png);
+    font-style: oblique;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background: #ededed;
+    width: 600px;
+}
+        
+        
