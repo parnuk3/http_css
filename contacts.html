@@ -6,81 +6,106 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <ul class="menu">
-        <li><a href="index.html">Главная</a><br></li>
-        <li><a href="catalog/catalog.html">Каталог</a><br></li>
-        <li><a href="#">Контакты</a><br></li>   
-    </ul> 
+    <header>
+        <div class="block_menu">
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog/catalog.html">Каталог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="logo"> 
+            <table>
+                <tr>
+                    <td class="logo_img" rowspan="2">
+                        <a href="index.html"><img src="img/логотип сайта.png" alt="Перейти на главную" width="200" title="Перейти на главную"></a>
+                    </td>
+                    <td class="Search">
+                        <form action="#">
+                            <input class="Search_input" type="text" size="35" placeholder="Поиск в интернет магазине PROfoto.ru">
+                            <input class="Search_Button" type="submit" value="Найти">
+                        </form>
+                    </td>    
+                </tr>
+                <tr>
+                    <td class="phone">
+                        <b>8 (343) 215-54-85, +7 922-451-54-54</b><br>
+                        звоните с 9:00 до 23:00
+                    </td>
+                </tr>
+            </table>
+        </div>    
+    </header>
     <hr>
-    <h1 style="margin: none">Контактная информация</h1>
-    
-       
-        <div id="Adress">
-            <h2>Адрес</h2>
-            <p>
-                Екатеринбург, Вильгельма де Геннина, 42<br>
-                Бесплатный телефон. Звоните с 9:00 до 23:00<br>
-                <b><big>8 (343) 215-54-85, +7 922-451-54-54</big></b><br>
-                электронная почта<br>
-                <a href="#">info@profoto.ru</a>
-            </p>        
-        </div>
-        <div id="Feedback">
-            <h2>Напишите нам</h2>
-            <div>
-                <form action="#">
-                   <table>
-                       <tr>
-                           <td>Ваше имя:</td>
-                           <td><input id="name" type="text" placeholder="Ваше имя"></td>
+        <div>
+            <h1 style="margin: none">Контактная информация</h1>
+            <div id="Adress">
+                <h2>Адрес</h2>
+                <p>
+                    Екатеринбург, Вильгельма де Геннина, 42<br>
+                    Бесплатный телефон. Звоните с 9:00 до 23:00<br>
+                    <b><big>8 (343) 215-54-85, +7 922-451-54-54</big></b><br>
+                    электронная почта<br>
+                    <a href="#">info@profoto.ru</a>
+                </p>        
+            </div>
+            <div id="Feedback">
+                <h2>Напишите нам</h2>
+                <div>
+                    <form action="#">
+                       <table>
+                           <tr>
+                               <td>Ваше имя:</td>
+                               <td><input id="name" type="text" placeholder="Ваше имя"></td>
 
-                       </tr>
-                       <tr>
-                           <td>E-mail:</td>
-                           <td><input id="email" type="email" placeholder="ivaniv@gmail.com"></td>    
-                       <tr>
-                           <td>Тема:</td>
-                           <td>
-                              <select>
-                                  <option></option>
-                                  <option>Консультация по выбору товара</option>
-                                  <option>Гарантийное обслуживание</option>
-                                  <option>Предложения по улучшению сервиса</option>
-                              </select>
-                           </td>
-                       </tr>
-                       <tr>
-                           <td>Текст сообщения:</td>
-                           <td><textarea class="enter"></textarea></td>
-                       </tr>
-                       <tr>
-                           <td></td>
-                           <td>
-                               <input type="submit" value="Отправить">
-                               <input type="reset" value="Начать заново">
-                           </td>
-                       </tr>
-                    </table>
-                
-                </form>
-            </div>       
-        </div>
+                           </tr>
+                           <tr>
+                               <td>E-mail:</td>
+                               <td><input id="email" type="email" placeholder="example@gmail.com"></td>    
+                           <tr>
+                               <td>Тема:</td>
+                               <td>
+                                  <select>
+                                      <option></option>
+                                      <option>Консультация по выбору товара</option>
+                                      <option>Гарантийное обслуживание</option>
+                                      <option>Предложения по улучшению сервиса</option>
+                                  </select>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>Текст сообщения:</td>
+                               <td><textarea  class="enter"></textarea></td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td>
+                                   <input type="submit" value="Отправить">
+                                   <input type="reset" value="Начать заново">
+                               </td>
+                           </tr>
+                        </table>
+
+                    </form>
+                </div>       
+            </div>
+        </div>  
         <div id="Delivery">
-            <h2>Доставка</h2>
-            <p>
-                Доставка осуществляется ежедневно, с 10:00 до 23:00.<br>  
-                Также вы можете забрать свой заказ на пунктах выдачи.
-            </p>
-
-            <h4></h4>
-            <p>
-                <b>Пункт выдачи заказов:</b><br>
-                Екатеринбург, Вильгельма де Геннина, 42 ежедневно c 10:00 до 21:00
-            </p>
-            <iframe class="product" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9abdf7b4ca0813dbaf1c8b0eb47dab022c4c468a05ebce3488eec693e5e29a44&amp;source=constructor" width="700" height="500" frameborder="0"></iframe>    
+            <div>
+                <h2>Доставка</h2>
+                    <p>
+                        Доставка осуществляется ежедневно, с 10:00 до 23:00.<br>  
+                        Также вы можете забрать свой заказ на пунктах выдачи.
+                    </p>
+                    <p>
+                        <b>Пункт выдачи заказов:</b><br>
+                        Екатеринбург, Вильгельма де Геннина, 42 ежедневно c 10:00 до 21:00
+                    </p>
+            </div>
+            <div>
+                <iframe class="product" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9abdf7b4ca0813dbaf1c8b0eb47dab022c4c468a05ebce3488eec693e5e29a44&amp;source=constructor" width="700" height="500" frameborder="0"></iframe>
+            </div>
         </div>
-
     <hr>
     <footer>
         <p>Все права защищены &copy; 2017</p>

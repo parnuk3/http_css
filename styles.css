@@ -8,7 +8,8 @@ body{
     padding: 10px;
     margin: auto;
 }
-/* стили меню */
+    /* СТИЛИ ШАПКИ */
+    /* стили меню */
 .menu li{
     list-style-type: none;
     font-size: 20px;
@@ -21,17 +22,65 @@ body{
 }
 .menu{
     padding: 0;
-    margin-left: 10px;
 }
+.menu li a:hover {
+    color: #444;
+    font-weight: 700;
+}
+.menu li:hover {
+    background: #eee;
+}
+.menu li a:active {
+    color:green;
+}
+.menu li:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.menu li:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.menu li:nth-child(2), .menu li:nth-child(3) {
+    border-top: 0px;
+}
+/* стили поиска */
+.Search_input{
+    height: 25px;
+    width: 400px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 5px;
+    border: 1px solid grey;
+    
+    
+    
+}
+.Search_Button{
+    height: 30px;
+}
+/* разметка шапки */
+.block_menu {
+    height: 90px;
+    float: left;
+}
+.logo {
+    height: 90px;
+    padding-top: 10px;
+    margin-left: 130px
+}
+.logo_img {
+    padding-right: 20px;
+}
+.logo_img:hover {
+    outline: 1px solid #ddd;
+}
+
 /* убрирает подчеркивание ссылок*/
 a{
     text-decoration: none;
     color: #333;
     font-size: 18px;
-}
-/* выравнивание текста в таблицах по верхнему краю*/
-td{
-    vertical-align: top;
 }
 /*стили для всех заголовков h1*/
 h1{
@@ -41,6 +90,7 @@ padding-left: 0px;
 padding-right: 0px;
 color: #333;
 }
+/*стили для всех заголовков h2*/
 h2{
    color: #333; 
 }
@@ -51,26 +101,23 @@ h2{
 #About_profoto{
     text-align: justify;
 }
-/*стили поисковой строки */
-.Search{
-    height: 25px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-left: 5px;
-    border: 1px solid grey;
-    
-}
-.Search_Button{
-    height: 30px;
-}
-
 
 /*СТИЛИ КАТАЛОГА*/
-
+/* первая буква каждого параграфа */
+.detailed_description:first-letter {
+    font-family: monospace;
+    font-size: 20px;
+    color: brown;
+    font-weight: 500;
+}
 /* стили фотографий продукции */
 .product{
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 2px #999;
+    outline: 2px solid #ccc;
+    box-shadow: 2px 2px 2px #ddd;
+}
+.product:hover {
+    outline: 0px;
+    box-shadow: none;
 }
 /* стили заголовков на стр товара*/
 .Label_Catalog {
@@ -84,7 +131,7 @@ h2{
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
-    list-style-type: square;
+    list-style-image: url(img/marks.png);
 }
 /*стили раздела подробное описание*/
 .detailed_description{
@@ -94,22 +141,7 @@ h2{
     line-height: 24px;
     text-align: left;
 }
-/*стили характеристик товара*/
-.characteristics{
-    list-style-type: none;
-    padding: 10px;
-    color: #333;
-    
-}
-.characteristics ul{
-    list-style-image: url(img/marks.png);
-    font-style: oblique;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    background: #ededed;
-    width: 600px;
-    
-}
+
 .mini_catalog{
     width: 50px;
     box-shadow: 0px 0px 1px #000;
@@ -117,7 +149,32 @@ h2{
 #catalog_list td{
     vertical-align: middle;
 }
+/*стили характеристик товара*/
+.characteristics {
+    border-collapse: collapse;
+}
+.characteristics tr:nth-child(2n) {
+    background: RGB(245, 245,220);
 
+}
+.characteristics th {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.characteristics td {
+    border: 1px solid #ddd;
+    font-style: oblique;
+    font-size: 16px;
+}
+/* выделение ссылки при наведении */
+.catalog_link:hover {
+    color: #444;
+    font-weight: 700;
+    background: #efefef;
+}
+.catalog_link img:hover {
+    outline: 2px solid lightblue;
+}
 
 /*СТИЛИ КОНТАКТОВ*/
 
@@ -125,6 +182,12 @@ h2{
 #name, #email{
     width: 200px;
     height: 16px;
+}
+#name:focus,
+#email:focus,
+textarea:focus {
+    background: lightgoldenrodyellow;
+    color: #177;
 }
 /*Поле сообщения*/
 textarea{
@@ -141,7 +204,11 @@ select{
     color: #444;
     font-size: 16px;
     font-style: italic
-} 
+}
+/* любое слово в полях "Ваше имя" и "Текст сообщения" начинаются с заглавной буквы */
+#name, .enter{
+    text-transform: capitalize
+}
 /*стили блоков*/
 #Adress, #Feedback{
     float: left;
@@ -159,6 +226,7 @@ select{
 #Delivery{
     clear: left;
 }
+
 
 
 
