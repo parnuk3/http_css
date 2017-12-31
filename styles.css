@@ -1,3 +1,5 @@
+/*ОБЩИЕ СТИЛИ*/
+
 /* фон + выравнивание контента по центру страницы */
 body{
     background-color: #f8f8f8;
@@ -12,7 +14,7 @@ body{
     font-size: 20px;
     border: 1px  solid grey;
     width: 100px;
-    text-align: center
+    text-align: center;
 }
 .menu li a{
     color: #666;
@@ -21,26 +23,62 @@ body{
     padding: 0;
     margin-left: 10px;
 }
-
-/* выравнивание таблицы на главной по верхнему краю */
-.Header td{
-    vertical-align: top;
-}
-
 /* убрирает подчеркивание ссылок*/
 a{
     text-decoration: none;
+    color: #333;
+    font-size: 18px;
 }
+/* выравнивание текста в таблицах по верхнему краю*/
+td{
+    vertical-align: top;
+}
+/*стили для всех заголовков h1*/
+h1{
+margin-top: 0px;
+margin-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+color: #333;
+}
+h2{
+   color: #333; 
+}
+
+
+/*СТИЛИ ГЛАВНОЙ СТРАНИЦЫ*/
+
+#About_profoto{
+    text-align: justify;
+}
+/*стили поисковой строки */
+.Search{
+    height: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 5px;
+    border: 1px solid grey;
+    
+}
+.Search_Button{
+    height: 30px;
+}
+
+
+/*СТИЛИ КАТАЛОГА*/
+
 /* стили фотографий продукции */
 .product{
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 2px #999
+    box-shadow: 2px 2px 2px #999;
 }
-h2{
+/* стили заголовков на стр товара*/
+.Label_Catalog {
     font-size: 18px;
     font-weight: 400;
     background: #eaeaea;
 }
+/* стили раздела короткое описание*/
 .short_description{
     color: #707070;
     font-size: 14px;
@@ -48,6 +86,7 @@ h2{
     line-height: 16px;
     list-style-type: square;
 }
+/*стили раздела подробное описание*/
 .detailed_description{
     color: #484343;
     font-size: 16px;
@@ -55,6 +94,7 @@ h2{
     line-height: 24px;
     text-align: left;
 }
+/*стили характеристик товара*/
 .characteristics{
     list-style-type: none;
     padding: 10px;
@@ -70,59 +110,60 @@ h2{
     width: 600px;
     
 }
+.mini_catalog{
+    width: 50px;
+    box-shadow: 0px 0px 1px #000;
+}
+#catalog_list td{
+    vertical-align: middle;
+}
+
+
+/*СТИЛИ КОНТАКТОВ*/
+
+/*поля ввода "Ваше имя" и "E-mail"*/
 #name, #email{
     width: 200px;
     height: 16px;
 }
-
+/*Поле сообщения*/
 textarea{
     width: 300px;
-    height: 48px;       
+    height: 48px;
 }
+/*Поле выбора темы*/
 select{
     width: 305px;
     height: 22px; 
 }
+/*стили для всех полей*/
+#name, #email, textarea, select{
+    color: #444;
+    font-size: 16px;
+    font-style: italic
+} 
+/*стили блоков*/
 #Adress, #Feedback{
     float: left;
     padding-top: 0px;
     margin-bottom: 20px;
 }
 #Feedback{
-    margin-left: 200px;
-    margin-top: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff 
+    margin-left: 150px;
 }
-#Feedback h2{
-    background-color: #fff;
-    font-weight: bolder;
-    color: #333;
-    padding-top: 0px;
-    margin-top: 0px
+#Feedback div{
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background-color: #fdfdfd;
 }
 #Delivery{
     clear: left;
 }
 
-h1{
-margin-top: 0px;
-margin-bottom: 0px;
-padding-left: 0px;
-padding-right: 0px;
-color: #333
-}
-.Search{
-    height: 25px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    padding-left: 5px;
-    
-}
-.Search_Button{
-    height: 30px;
-}
+
+
+
+
 
 
 
