@@ -6,47 +6,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="block_menu">
-            <ul class="menu">
-                <li><a href="#">Главная</a><br></li>
-                <li><a href="catalog/catalog.html">Каталог</a><br></li>
-                <li><a href="contacts.html">Контакты</a><br></li>
-            </ul>
-        </div>
-        <div class="logo"> 
-            <table>
-                <tr>
-                    <td class="logo_img" rowspan="2">
-                        <a href="index.html"><img src="img/логотип сайта.png" alt="Перейти на главную" width="200" title="Перейти на главную"></a>
-                    </td>
-                    <td class="Search">
-                        <form action="#">
-                            <input class="Search_input" type="text" size="35" placeholder="Поиск в интернет магазине PROfoto.ru">
-                            <input class="Search_Button" type="submit" value="Найти">
-                        </form>
-                    </td>    
-                </tr>
-                <tr>
-                    <td class="phone">
-                        <b>8 (343) 215-54-85, +7 922-451-54-54</b><br>
-                        звоните с 9:00 до 23:00
-                    </td>
-                </tr>
-            </table>
-        </div>    
-    </header>
-    <hr>
-    <div>
+    <div class="container">
+        <div class="header">
+            <div class="logo"> 
+                <a href="index.html"><img src="img/логотип сайта.png" alt="Перейти на главную" height="70px" title="Перейти на главную"></a>
+            </div>
+            <div class="header_content">
+                <ul class="menu">
+                    <li><a href="#">Главная</a><br></li>
+                    <li><a href="catalog/catalog.html">Каталог</a><br></li>
+                    <li><a href="contacts.html">Контакты</a><br></li>
+                </ul>
+                <form action="#">
+                    <input class="Search_input" type="text" size="35" placeholder="Поиск в интернет магазине PROfoto.ru">
+                    <input class="Search_Button" type="submit" value="Найти">
+                </form>  
+            </div>           
+        </div>   
+        <hr>
+        <div>
         <img src="img/акция.jpg" alt="Новогодние акции" width="900">
         <h2>Интернет магазин фототехники PROfoto</h2>
         <p id="About_profoto">
             За 10 лет работы мы прошли длинный путь: от небольшого сервисного центра до крупной сети магазинов фототехники по всей стране. Мы существуем и развиваемся благодаря вашей искренней поддержке и желанию идти дальше, стремиться к цели и добиваться своего. Наша миссия: сделать профессианальное фото доступным для всех.  Вы - главное, что у нас есть, наши сотрудники сделают все, чтобы вам было комфортно работать с нами.
         </p>
     </div>
-    <hr>
-    <footer>
-        <p>Все права защищены &copy; 2017</p>
-    </footer> 
+        <hr>
+        <div class="footer">
+            <span>Все права защищены &copy; 2017</span>
+        </div>
+    </div>
 </body>
 </html>

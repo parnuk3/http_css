@@ -8,70 +8,46 @@
 </head>
 
 <body>
-    <header>
-        <div class="block_menu">
-            <ul class="menu">
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="../contacts.html">Контакты</a></li>
-            </ul>
+    <div class="container">
+        <div class="header">
+            <div class="logo"> 
+                <a href="../index.html"><img src="../img/логотип сайта.png" alt="Перейти на главную" height="70px" title="Перейти на главную"></a>
+            </div>
+            <div class="header_content">
+                <ul class="menu">
+                    <li><a href="../index.html">Главная</a><br></li>
+                    <li><a href="#">Каталог</a><br></li>
+                    <li><a href="../contacts.html">Контакты</a><br></li>
+                </ul>
+                <form action="#">
+                    <input class="Search_input" type="text" size="35" placeholder="Поиск в интернет магазине PROfoto.ru">
+                    <input class="Search_Button" type="submit" value="Найти">
+                </form>  
+            </div>       
         </div>
-        <div class="logo"> 
-            <table>
-                <tr>
-                    <td class="logo_img" rowspan="2">
-                        <a href="../index.html"><img src="../img/логотип сайта.png" alt="Перейти на главную" width="200" title="Перейти на главную"></a>
-                    </td>
-                    <td class="Search">
-                        <form action="#">
-                            <input class="Search_input" type="text" size="35" placeholder="Поиск в интернет магазине PROfoto.ru">
-                            <input class="Search_Button" type="submit" value="Найти">
-                        </form>
-                    </td>    
-                </tr>
-                <tr>
-                    <td class="phone">
-                        <b>8 (343) 215-54-85, +7 922-451-54-54</b><br>
-                        звоните с 9:00 до 23:00
-                    </td>
-                </tr>
-            </table>
-        </div>    
-    </header>
-    <hr>
-    <div>
-        <h2>Каталог</h2>  
-        <table id="catalog_list">
-            <tr>
-                <td>
-                    <a class="catalog_link" href="Canon_EOS_5D_Mark_III.html"><img class="mini_catalog" src="../img/Canon EOS 5D Mark III kit 24-105 4L IS.jpg" alt="foto"></a>   
-                </td>
-                <td>
-                    <a class="catalog_link" href="Canon_EOS_5D_Mark_III.html">Canon EOS 5D Mark III kit 24-105 4L IS</a>
-                </td>            
-            </tr>
-            <tr>
-                <td>
-                    <a class="catalog_link" href="Canon_EOS_100D_kit.html"><img class="mini_catalog" src="../img/Canon%20EOS%20100D%20Kit.jpg" alt="foto"></a>
-                </td>
-                <td>
-                    <a class="catalog_link" href="Canon_EOS_100D_kit.html">Canon EOS 100D kit 18-55 IS STM White (белый)</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class="catalog_link" href="Canon_EOS_750D_Body.html"><img class="mini_catalog" src="../img/Canon%20EOS%20750D%20Body.jpg" alt="foto"></a>
-                </td>
-                <td>
-                    <a class="catalog_link" href="Canon_EOS_750D_Body.html">Canon EOS 750D Body</a>
-                </td>
-            </tr>    
-        </table>
-    </div>   
-    <hr>    
-    <footer>
-        <p>Все права защищены &copy; 2017</p>
-    </footer>
+        <hr>
+        <div class="catalog_container">
+           <h2>Каталог</h2>
+           <div class="mini_catalog_product">
+                <a class="catalog_link" href="Canon_EOS_5D_Mark_III.html"><img class="mini_catalog" src="../img/Canon EOS 5D Mark III kit 24-105 4L IS.jpg" alt="foto"></a><br>
+                <a class="catalog_link" href="Canon_EOS_5D_Mark_III.html">Canon EOS 5D Mark III<br>
+                kit 24-105 4L IS</a> 
+            </div>
+            <div class="mini_catalog_product">
+                <a class="catalog_link" href="Canon_EOS_100D_kit.html"><img class="mini_catalog" src="../img/Canon%20EOS%20100D%20Kit.jpg" alt="foto"></a><br>
+                <a class="catalog_link" href="Canon_EOS_100D_kit.html">Canon EOS 100D<br>
+                kit 18-55 IS STM White (белый)</a>
+            </div>
+            <div class="mini_catalog_product">
+                <a class="catalog_link" href="Canon_EOS_750D_Body.html"><img class="mini_catalog" src="../img/Canon%20EOS%20750D%20Body.jpg" alt="foto"></a><br>
+                <a class="catalog_link" href="Canon_EOS_750D_Body.html">Canon EOS 750D Body</a>
+            </div>
+        </div>
+      
+        <hr>    
+        <div class="footer">
+            <span>Все права защищены &copy; 2017</span>
+        </div>
+    </div>
     </body>
-
 </html>

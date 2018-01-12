@@ -1,48 +1,64 @@
 /*ОБЩИЕ СТИЛИ*/
 
 /* фон + выравнивание контента по центру страницы */
-body{
+body {
     background-color: #f8f8f8;
+
+}
+.container {
     width: 900px;
-    height: 100%;
-    padding: 10px;
-    margin: auto;
+    margin: 0 auto;
+    background: #fefefe;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px
 }
     /* СТИЛИ ШАПКИ */
+    /* Шапка */
+.header {
+    position: relative;
+    padding: 20px;
+    background-image: url(img/header_bg.png)
+}
+    /* Логотип */
+.logo {
+    float: left;
+}
+.logo a:hover {
+    outline: 1px solid #ddd;
+}
+    /* блок содержимого меню */
+.header_content {   
+    display: inline-block;
+    padding-left: 20px;
+}
     /* стили меню */
+.menu {
+    margin: 0px;
+    padding-left: 0px;
+    padding-bottom: 18px;
+}
 .menu li{
     list-style-type: none;
-    font-size: 20px;
     border: 1px  solid grey;
-    width: 100px;
+    border-radius: 5px;
+    width: 110px;
     text-align: center;
+    display: inline-block;
 }
 .menu li a{
     color: #666;
+    font-size: 22px;
 }
-.menu{
-    padding: 0;
+.menu li:hover {
+    background: #eee;
 }
 .menu li a:hover {
     color: #444;
     font-weight: 700;
 }
-.menu li:hover {
-    background: #eee;
-}
 .menu li a:active {
     color:green;
-}
-.menu li:first-child {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.menu li:last-child {
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-.menu li:nth-child(2), .menu li:nth-child(3) {
-    border-top: 0px;
 }
 /* стили поиска */
 .Search_input{
@@ -51,29 +67,10 @@ body{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-left: 5px;
-    border: 1px solid grey;
-    
-    
-    
+    border: 1px solid grey;  
 }
 .Search_Button{
     height: 30px;
-}
-/* разметка шапки */
-.block_menu {
-    height: 90px;
-    float: left;
-}
-.logo {
-    height: 90px;
-    padding-top: 10px;
-    margin-left: 130px
-}
-.logo_img {
-    padding-right: 20px;
-}
-.logo_img:hover {
-    outline: 1px solid #ddd;
 }
 
 /* убрирает подчеркивание ссылок*/
@@ -94,7 +91,19 @@ color: #333;
 h2{
    color: #333; 
 }
-
+    /* СТИЛИ ПОДВАЛА */
+.footer {
+    height: 50px;
+    background: #777;
+    color: #efefef;
+    text-align: right;
+    clear: both;
+}
+.footer span {
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 20px
+}
 
 /*СТИЛИ ГЛАВНОЙ СТРАНИЦЫ*/
 
@@ -103,6 +112,70 @@ h2{
 }
 
 /*СТИЛИ КАТАЛОГА*/
+/* страница каталога */
+.mini_catalog{
+    width: 250px;
+    height: 190px;
+    box-shadow: 0px 0px 1px #000;
+}
+.catalog_container {
+    height: 300px;
+    padding: 10px;
+    text-align: center
+}
+.catalog_container h2 {
+    display: block;
+    margin-top: 0px;
+    
+}
+.mini_catalog_product {
+    float: left;
+    text-align: center;
+    width: 290px;
+}
+
+/* выделение ссылки при наведении */
+.catalog_link {
+    font-size: 16px
+}
+.catalog_link:hover {
+    color: #444;
+    font-weight: 700;
+}
+.catalog_link img:hover {
+    outline: 2px solid lightblue;
+}
+/* стили страницы товара */
+.block_product_img {
+    float: left;
+}
+.block_short_description {
+    margin-left: 270px;
+    height: 210px
+}
+.block_short_description h2 {
+    margin-top: 0px;
+}
+/* кнопка добавить в корзину */
+.buy {
+    clear: both;
+
+}
+.buy input {
+    height: 30px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 600;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.buy input:hover {
+    color: #444;
+    font-weight: 700;
+    background: #eee;
+    border: 2px solid grey;
+}
 /* первая буква каждого параграфа */
 .detailed_description:first-letter {
     font-family: monospace;
@@ -132,6 +205,7 @@ h2{
     font-style: italic;
     line-height: 16px;
     list-style-image: url(img/marks.png);
+    padding-left: 25px;
 }
 /*стили раздела подробное описание*/
 .detailed_description{
@@ -140,11 +214,6 @@ h2{
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-}
-
-.mini_catalog{
-    width: 50px;
-    box-shadow: 0px 0px 1px #000;
 }
 #catalog_list td{
     vertical-align: middle;
@@ -166,15 +235,7 @@ h2{
     font-style: oblique;
     font-size: 16px;
 }
-/* выделение ссылки при наведении */
-.catalog_link:hover {
-    color: #444;
-    font-weight: 700;
-    background: #efefef;
-}
-.catalog_link img:hover {
-    outline: 2px solid lightblue;
-}
+
 
 /*СТИЛИ КОНТАКТОВ*/
 
@@ -210,21 +271,29 @@ select{
     text-transform: capitalize
 }
 /*стили блоков*/
-#Adress, #Feedback{
-    float: left;
-    padding-top: 0px;
-    margin-bottom: 20px;
-}
 #Feedback{
-    margin-left: 150px;
+    float: left;
+}
+#Feedback h2,
+#Adress h2 {
+    margin-top: 0px;
+}
+#Adress {
+    display: inline-block;
+    margin-left: 50px
 }
 #Feedback div{
     border: 1px solid #ddd;
     border-radius: 7px;
-    background-color: #fdfdfd;
 }
 #Delivery{
+    margin-top: 70px;
     clear: left;
+}
+/* стили карты */
+.map {
+    width: 100%;
+    height: 374px;
 }
 
 
