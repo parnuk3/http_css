@@ -1,230 +1,41 @@
-/*ОБЩИЕ СТИЛИ*/
-
-/* фон + выравнивание контента по центру страницы */
-body{
-    background-color: #f8f8f8;
-    width: 900px;
-    height: 100%;
-    padding: 10px;
-    margin: auto;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+    
+body {
+    font-family: 'Montserrat', sans-serif;
 }
-    /* СТИЛИ ШАПКИ */
-    /* стили меню */
-.menu li{
-    list-style-type: none;
-    font-size: 20px;
-    border: 1px  solid grey;
-    width: 100px;
-    text-align: center;
-}
-.menu li a{
-    color: #666;
-}
-.menu{
-    padding: 0;
-}
-.menu li a:hover {
-    color: #444;
-    font-weight: 700;
-}
-.menu li:hover {
+.container {
+    width: 1366px;
+    height: 800px;
+    margin: 0 auto;
     background: #eee;
 }
-.menu li a:active {
-    color:green;
-}
-.menu li:first-child {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.menu li:last-child {
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-.menu li:nth-child(2), .menu li:nth-child(3) {
-    border-top: 0px;
-}
-/* стили поиска */
-.Search_input{
-    height: 25px;
-    width: 400px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-left: 5px;
-    border: 1px solid grey;
-    
-    
-    
-}
-.Search_Button{
-    height: 30px;
-}
-/* разметка шапки */
-.block_menu {
-    height: 90px;
-    float: left;
+header {
+    height: 800px;
+    padding-left: 98px;
+    padding-top: 63px;
+    background-image: url('img/slider.jpg');
 }
 .logo {
-    height: 90px;
-    padding-top: 10px;
-    margin-left: 130px
 }
-.logo_img {
-    padding-right: 20px;
+.menu {
+    list-style-type: none;
+    float:right;
+    padding-left: 0px;
+    margin: 0 167px 0 0;
 }
-.logo_img:hover {
-    outline: 1px solid #ddd;
-}
-
-/* убрирает подчеркивание ссылок*/
-a{
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-}
-/*стили для всех заголовков h1*/
-h1{
-margin-top: 0px;
-margin-bottom: 0px;
-padding-left: 0px;
-padding-right: 0px;
-color: #333;
-}
-/*стили для всех заголовков h2*/
-h2{
-   color: #333; 
-}
-
-
-/*СТИЛИ ГЛАВНОЙ СТРАНИЦЫ*/
-
-#About_profoto{
-    text-align: justify;
-}
-
-/*СТИЛИ КАТАЛОГА*/
-/* первая буква каждого параграфа */
-.detailed_description:first-letter {
-    font-family: monospace;
-    font-size: 20px;
-    color: brown;
-    font-weight: 500;
-}
-/* стили фотографий продукции */
-.product{
-    outline: 2px solid #ccc;
-    box-shadow: 2px 2px 2px #ddd;
-}
-.product:hover {
-    outline: 0px;
-    box-shadow: none;
-}
-/* стили заголовков на стр товара*/
-.Label_Catalog {
-    font-size: 18px;
-    font-weight: 400;
-    background: #eaeaea;
-}
-/* стили раздела короткое описание*/
-.short_description{
-    color: #707070;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
-    list-style-image: url(img/marks.png);
-}
-/*стили раздела подробное описание*/
-.detailed_description{
-    color: #484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-}
-
-.mini_catalog{
-    width: 50px;
-    box-shadow: 0px 0px 1px #000;
-}
-#catalog_list td{
+.menu > li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 21px;
     vertical-align: middle;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
 }
-/*стили характеристик товара*/
-.characteristics {
-    border-collapse: collapse;
-}
-.characteristics tr:nth-child(2n) {
-    background: RGB(245, 245,220);
+a {
+    text-decoration: none;
+    color:  #8c8c8c;
 
-}
-.characteristics th {
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.characteristics td {
-    border: 1px solid #ddd;
-    font-style: oblique;
-    font-size: 16px;
-}
-/* выделение ссылки при наведении */
-.catalog_link:hover {
-    color: #444;
-    font-weight: 700;
-    background: #efefef;
-}
-.catalog_link img:hover {
-    outline: 2px solid lightblue;
-}
-
-/*СТИЛИ КОНТАКТОВ*/
-
-/*поля ввода "Ваше имя" и "E-mail"*/
-#name, #email{
-    width: 200px;
-    height: 16px;
-}
-#name:focus,
-#email:focus,
-textarea:focus {
-    background: lightgoldenrodyellow;
-    color: #177;
-}
-/*Поле сообщения*/
-textarea{
-    width: 300px;
-    height: 48px;
-}
-/*Поле выбора темы*/
-select{
-    width: 305px;
-    height: 22px; 
-}
-/*стили для всех полей*/
-#name, #email, textarea, select{
-    color: #444;
-    font-size: 16px;
-    font-style: italic
-}
-/* любое слово в полях "Ваше имя" и "Текст сообщения" начинаются с заглавной буквы */
-#name, .enter{
-    text-transform: capitalize
-}
-/*стили блоков*/
-#Adress, #Feedback{
-    float: left;
-    padding-top: 0px;
-    margin-bottom: 20px;
-}
-#Feedback{
-    margin-left: 150px;
-}
-#Feedback div{
-    border: 1px solid #ddd;
-    border-radius: 7px;
-    background-color: #fdfdfd;
-}
-#Delivery{
-    clear: left;
 }
 
 
