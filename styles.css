@@ -256,19 +256,21 @@ header {
 .promo2 {
     background: url(img/promo-img.jpg)
 }
-.promo_content h3 {
+.exclusive {
     color:  #1e88e5;
     font-size: 18px;
     font-weight: 700;
     margin: 0 0 18px 0;
 }
-.promo_content h2 {
+.promo_content h2,
+.exclusive-product h2 {
     color:  #212121;
     font-size: 36px;
     font-weight: 700;
     margin: 0 0 24px 0;
 }
-.promo_content p {
+.promo_content p,
+.exclusive-product p {
     width: 384px;
     color:  #6c6c6c;
     font-size: 13.99px;
@@ -340,6 +342,7 @@ header {
 .exclusive-product {
     padding-top: 120px;
     padding-left: 98px;
+    display: inline-block;
 }
 .product-1-lg {
     background-image: url(img/product-1-lg.jpg);
@@ -347,4 +350,59 @@ header {
     height: 384px;
     padding-top: 186px;
     padding-left: 31px;
+    float: left;
+}
+.exclusive-product p{
+    width: 342px;
+}
+.exclusive-product img {
+    display: block;
+    float: left;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+.mobile-app {
+    background-image: url(img/back-img.jpg);
+    height: 391px;
+    width: 1267px;
+    margin-top: 90px;
+    padding-top: 125px;
+    padding-left: 99px;
+    clear: both;
+}
+.mobile-app h2 {
+    color:  #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 22px 0;
+}
+.mobile-app h1 {
+    color:  #212121;
+    font-size: 62px;
+    font-weight: 100;
+    margin: 7px 0 26px 0;
+    width: 500px;
+}
+.mobile-app p {
+    color:  #6c6c6c;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 0 33px 0;  
+}
+footer {
+    background-color:  #f7f7f7;
+    width: 1267px;
+    height: 264px;
+    padding-top: 120px;
+    padding-left: 99px;
+}
+.contact_as {
+    width: 221px;
+    float: left;
+    padding-right: 80px;
+}
+.useful_info {
+    width: 550px;
+    padding-right: 78px;
+    float: left;
 }
