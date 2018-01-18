@@ -335,9 +335,9 @@ header {
     margin: 0 0 32px 0;
 }
 .slider_nav_hot {
-    margin-bottom: 2px;
-    margin-left: 623;
-    border: 1px solid #000;
+    display: inline-block;
+    margin-top: 180px;
+    margin-left: 623px;
 }
 .exclusive-product {
     padding-top: 120px;
@@ -401,8 +401,95 @@ footer {
     float: left;
     padding-right: 80px;
 }
+footer h3 {
+    color:  #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 24px 0; 
+}
+footer p {
+    color:  #212121;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0px;
+    line-height: 22px;
+}
+.contact_as a {
+    text-decoration: none;
+    margin: 0px;
+    color:  #212121;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.contact_as a:hover {
+    border-bottom: 1px solid grey;
+}
 .useful_info {
-    width: 550px;
-    padding-right: 78px;
     float: left;
+}
+.useful_info li {
+    list-style-type: none;
+}
+.useful_info ul {
+    padding: 0px;
+    float: left;
+    margin: 0px;
+    padding-right: 80px;
+}
+.useful_info a {
+    text-decoration: none;
+    color:  #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.suscribe {
+    width: 370px;
+    float: left;
+}
+.email {
+    border: 1px solid #d9dee1;
+    background-color:  #ffffff;
+    width: 349px;
+    height: 46px;
+    margin-top: 26px;
+
+}
+.suscribe input[type="email"] {
+    color:  #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 19px;
+    width: 290px;
+    height: 44px;
+    border: none; 
+}
+.suscribe input[type="email"]:focus {
+    outline: none;
+}
+.suscribe input[type="submit"] {
+    width: 21px;
+    height: 17px;
+    border: none;
+    background: url(img/contact%20us.png) no-repeat 50% 50%;
+}
+.copyright {
+    clear: both;
+    display: inline-block;
+    margin-top: 39px;
+}
+.copyright p {
+    display: inline-block;
+    color:  #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0px;
+}
+.copyright img {
+    display: inline-block;
+    margin-left: 158px;
+    margin-right: 172px;
 }
