@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Загадки</title>
+</head>
+<body>
+    <script>
+        var result = 0;
+        alert("Вам будут предложены 3 загадки, необходимо набрать максимальное кол-во баллов");
+        var UserAnswer = (prompt("Зимой и летом одним цветом. Ваш ответ: ")).toLowerCase();
+        
+        if (UserAnswer == "ель" || UserAnswer == "ёлка" || UserAnswer == "елка" || UserAnswer == "елочка") {
+            alert("Вы ответили верно и заработали 1 балл :)")
+            result ++;
+        }
+        else {
+            alert("Правильный ответ Елка. Не расстраивайтесь, у Вас все получится")
+        }
+        UserAnswer = (prompt("Без окон, без дверей, полна горница людей. Ваш ответ: ")).toLowerCase();
+        if (UserAnswer == "огурец" || UserAnswer == "огурчик" || UserAnswer == "огуречек") {
+            alert("Вы ответили верно и заработали 1 балл :)")
+            result ++;
+        }
+        else {
+            alert("Правильный ответ Огурец. Не расстраивайтесь, у Вас все получится")
+        }
+        UserAnswer = (prompt("Сто одежек, и все без застежек. Ваш ответ: ")).toLowerCase();
+        if (UserAnswer == "лук" || UserAnswer == "луковица" || UserAnswer == "лучок") {
+            alert("Вы ответили верно и заработали 1 балл :)")
+            result ++;
+        }
+        else {
+            alert("Правильный ответ Лук. Не расстраивайтесь, у Вас все получится")
+        }
+        alert("Ваш результат " + result + " из 3")
+        
+    </script>
+</body>
+</html>
